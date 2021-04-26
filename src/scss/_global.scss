@@ -1,0 +1,114 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  @apply font-secondary text-c-base text-base bg-gray-50;
+}
+
+h1 {
+	font-size: 2.75em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1.125em;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, button, a, label{
+	@apply font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply leading-tight;
+}
+
+h1, h2, h3 {
+  @apply font-bold;
+}
+
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.875em;
+	}
+
+	h3 {
+		font-size: 1.75em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+
+	h5 {
+		font-size: 1.375em;
+	}
+}
+
+img {
+	@apply w-full h-auto;
+}
+
+.wrapper {
+	@apply relative h-screen overflow-auto;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+section {
+	@apply bg-cover bg-center bg-no-repeat overflow-hidden;
+	scroll-snap-align: center;
+}
+
+.text-shadow {
+	text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+	@apply w-auto inline-block px-4 py-2 rounded-md text-md font-semibold transition-all duration-400 ease-in-out;
+}
+
+.input {
+	@apply w-6/12 px-4 py-2 bg-white bg-opacity-70 text-gray-900 rounded-md border border-gray-100 outline-none transition-all duration-400 ease-in-out;
+	&:focus {
+		@apply border-2 border-gray-200;
+	}
+	&::placeholder { @apply text-gray-700; }
+}
+
+.nav {
+	@apply fixed bottom-0 z-30 flex justify-between items-end w-full p-10 mx-auto;
+	.go-top {
+		@apply bg-black bg-opacity-50 hover:bg-opacity-90 px-8 text-white text-base flex justify-between;
+	}
+	.top, .down {
+		@apply bg-black bg-opacity-50 hover:bg-opacity-90 rounded-full w-10 h-10 flex justify-center items-center text-white transition-all duration-400 ease-in-out;
+	}
+}

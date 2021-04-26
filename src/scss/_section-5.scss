@@ -1,0 +1,28 @@
+.section-5 {
+  @apply h-screen bg-gastronomy p-12 flex flex-col;
+  h2 {
+    @apply text-shadow text-4xl text-white mb-8;
+  }
+  .gastro-gallery {
+    @apply grid grid-cols-3 gap-8 flex-1 h-0;
+    .dish {
+      @apply relative rounded-md overflow-hidden cursor-pointer;
+      figcaption {
+        @apply absolute left-0 bottom-0 ml-5 mb-5 z-1 text-white text-shadow text-2xl;
+      }
+      img {
+        @apply transform scale-100 rotate-0 transition-all duration-400 ease-in-out;
+      }
+      a {
+        @apply bg-white bg-opacity-30 opacity-0 -z-1 text-white text-lg border-2 border-white py-1 px-8 absolute transition-all duration-400 ease-in-out delay-150;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        img { @apply scale-115 rotate-6; }
+        a { @apply z-10 opacity-100 bg-opacity-90 text-gray-700; }
+      }
+    }
+  }
+}

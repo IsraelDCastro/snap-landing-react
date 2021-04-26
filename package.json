@@ -1,0 +1,26 @@
+{
+  "name": "snap-landing",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "autoprefixer": "^10.2.5",
+    "framer-motion": "^4.1.5",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
+    "postcss-import": "^14.0.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "sass": "^1.32.9",
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-refresh": "^1.3.2",
+    "react-text-typist": "^1.0.5",
+    "vite": "^2.2.1"
+  }
+}

@@ -1,0 +1,15 @@
+.section-2 {
+  @apply relative flex h-screen bg-section-2;
+  .glass {
+    @apply absolute left-0 bottom-0 w-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg h-80;
+  }
+  .information {
+    @apply relative px-11 mt-auto flex items-center;
+    .vertical-img {
+      @apply w-3/12 rounded-tl-md rounded-r-md overflow-hidden;
+    }
+    .horizontal-img {
+      @apply w-3/12 rounded-md overflow-hidden shadow-md absolute top-0 right-8;
+    }
+  }
+}
