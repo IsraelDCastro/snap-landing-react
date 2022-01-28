@@ -74,7 +74,7 @@ img {
 }
 
 .wrapper {
-	@apply relative h-screen overflow-auto;
+	@apply relative h-screen overflow-y-auto;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 	&::-webkit-scrollbar {

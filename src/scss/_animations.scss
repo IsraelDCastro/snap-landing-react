@@ -1,26 +1,58 @@
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: .8s;
 }
 
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-duration: .8s;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-delay: .5;
+}
+
+.sakuraFadeIn {
+  animation-name: fadeIn;
+  animation-delay: 1;
+}
+
+.placeDown {
+  animation-name: placeDown;
+  animation-delay: .4s;
+  &.place-delay-2 {
+    animation-delay: .9s;
+  }
+  &.place-delay-3 {
+    animation-delay: 1.4s;
+  }
+}
+
+@keyframes placeDown {
+  0% {
+    transform: translateY(-100%);
+    @apply opacity-0;
+  }
+  100% {
+    transform: translateY(0%);
+    @apply opacity-100;
+  }
 }
 
 .glassUp {
-  animation: .6s ease-in-out .4s alternate glassUp;
+  animation-name: glassUp;
 }
 
 .start {
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
+  animation-play-state: running;
+  animation-duration: 1s;
 }
 
-*[data-start="true"] {
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
+// *[data-start="true"] {
+//   animation-timing-function: ease-in-out;
+//   animation-direction: alternate;
+// }
 
 .infinite {
   animation-iteration-count: infinite;
@@ -61,6 +93,17 @@
   }
   100% {
     transform: translateY(0px);
+    @apply opacity-100;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(100%);
+    @apply opacity-0;
+  }
+  100% {
+    transform: translateX(0%);
     @apply opacity-100;
   }
 }

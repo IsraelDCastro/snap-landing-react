@@ -1,10 +1,9 @@
 import React from 'react';
-import Typist from 'react-text-typist';
 
 export default function CTA () {
   return (
     <section className="section-4">
-      <div>
+      <div className="fadeIn" data-start>
         <h4 className="mb-8">Receive new post every week with information, places, and receipts about Japan.</h4>
         <div className="field mb-6">
           <input type="text" className="input" placeholder="example@example.com" />
