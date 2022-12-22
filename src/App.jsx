@@ -32,8 +32,9 @@ function App() {
     //       element.classList.add('start');
           
     //     }
-    //   }
+    //
     // }
+	  setInterval( () => document.querySelector('.down').click(), 3500)
     let wrapper = document.querySelector('.wrapper');
     let section = document.querySelectorAll('section');
     document.querySelector('.top').addEventListener('click', () => {
